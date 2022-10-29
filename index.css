@@ -220,7 +220,7 @@ body{
         font-size: 20px;
       }
       .main-text{
-        font-size: 45px;
+        font-size: 30px;
       }
 
       .course-parent{
@@ -553,6 +553,24 @@ body{
   text-align: center;
   padding-bottom: 50px;
   font-size: 12px;
+}
+
+
+
+/* footer part responsive style */
+
+@media screen and (max-width: 900px) {
+  .sec-three-small-div{
+    font-size: 22px;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .sec-three-small-div{
+    font-size: 16px;
+  }
+  
 }
 
 /* footer part ended */

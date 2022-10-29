@@ -1,3 +1,6 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Kanit&family=Lobster&family=Oswald&family=Permanent+Marker&family=Poppins:ital@1&family=Roboto+Mono&family=Roboto:wght@100;500&family=Satisfy&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -39,7 +42,7 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
-    background-image: url("images/nav.jpg");
+    background-image: url("images/ru-home.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -57,7 +60,7 @@ body{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: yellow;
 }
 
 .nav-elements a:hover{
@@ -99,3 +102,395 @@ body{
     } 
   }
   /* navbar style ended */
+
+
+
+  /* home page style started */
+  .main-page{
+    height: 560px;
+    /* width: 100%; */
+    background-image: url("images/nav.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .home-page-below{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    color: white;
+  }
+
+  .welcome-text{
+    font-size: 29px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+  .welcome-div{
+    text-align: center;
+  }
+  .main-text{
+    font-size: 65px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  .courses-div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .courses-div img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .course-parent{
+    padding-top: 120px;
+    font-size: 25px;
+    display: flex;
+  }
+  
+  .course-parent a{
+    color: yellowgreen;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgba(26, 25, 25, 0.856);
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+  }
+
+  .course-parent a:hover{
+    color:red;
+    background-color: white;
+  }
+
+
+
+  /* main part responsive style */
+
+  @media screen and (max-width: 900px) {
+
+
+    .home-page{
+        font-size: 22px;
+      }
+    
+      .home-page img{
+        height: 30px;
+        width: 30px;
+      }
+
+
+    .welcome-text{
+        font-size: 22px;
+      }
+      .main-text{
+        font-size: 55px;
+      }
+
+      .course-parent{
+        font-size: 20px;
+      }
+
+      .courses-div img{
+        height: 26px;
+        width: 26px;
+      }
+  }
+
+@media screen and (max-width: 600px) {
+
+    .home-page{
+        font-size: 16px;
+      }
+    
+      .home-page img{
+        height: 25px;
+        width: 25px;
+      }
+
+    .welcome-text{
+        font-size: 20px;
+      }
+      .main-text{
+        font-size: 45px;
+      }
+
+      .course-parent{
+        font-size: 16px;
+      }
+
+      .courses-div img{
+        height: 22px;
+        width: 22px;
+      }
+  }
+  /* home page style ended */
+
+
+
+
+
+   /* section one details style started */
+
+.section-one{
+    height: 830px;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+.sec-one-text{
+    text-align: start;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+}
+
+.cards-div{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.card{
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: start;
+    background-color: white;
+    color: black;
+}
+.card iframe{
+    height: 220px;
+    width: 100%;
+}
+
+.card-text{
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+.visit-more{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    
+  }
+  
+  .visit-more img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  .visit-div{
+    padding-top: 60px;
+    font-size: 25px;
+    display: flex;
+  }
+  
+  .visit-div a{
+    color: red;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    border: 2px solid fuchsia;
+  }
+
+  .visit-div a:hover{
+    background-color: black;
+    color: white;
+    text-decoration: underline;
+  }
+
+
+/* section one details responsive part */
+@media screen and (max-width: 900px) {
+    
+    .section-one{
+        height: 690px;
+    }
+    .sec-one-text{
+        font-size: 40px;
+    }
+    
+    .cards-div{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    .card iframe{
+        height: 140px;
+    }
+    
+    .card-text{
+        font-size: 18px;
+    }
+
+    .visit-more img{
+        height: 25px;
+        width: 25px;
+      }
+    
+      .visit-div{
+        font-size: 18px;
+      }
+  }
+
+@media screen and (max-width: 600px) {
+
+    .section-one{
+        height: 680px;
+    }
+    .sec-one-text{
+        font-size: 30px;
+    }
+    
+    .cards-div{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    
+    .card-text{
+        font-size: 16px;
+    }
+
+    .visit-more img{
+        height: 20px;
+        width: 20px;
+      }
+    
+      .visit-div{
+        font-size: 14px;
+      }
+  }
+
+  /* section one details style ended */
+
+
+
+
+
+  /* section two started */
+
+.section-two{
+    height: 720px;
+    width: 100%;
+    background-color: black;
+    padding-bottom: 60px;
+    border-top: 1px solid white;
+}
+.section-two a{
+  text-decoration: none;
+  color: black;
+}
+
+.section-two a:hover{
+  text-decoration: underline;
+  color: yellowgreen;
+}
+.sec-two-text{
+    text-align: start;
+    padding-top: 40px;
+    padding-left: 40px;
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.cards-div-sec-two{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+}
+.card-two{
+    border: 1px solid gold;
+    border-radius: 10px;
+    background-color: white;
+
+}
+.card-two img{
+    height: 140px;
+    width: 100%;
+}
+
+.card-text-two{
+    font-size: 20px;
+}
+
+
+
+/* section two responsive part */
+
+@media screen and (max-width: 900px) {
+
+    .section-two{
+        height: 880px;
+    }
+    
+    .sec-two-text{
+        font-size: 40px;
+    }
+    
+    .cards-div-sec-two{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .card-two img{
+        height: 120px;
+    }
+    
+    .card-text-two{
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+
+    .section-two{
+        height: 1380px;
+    }
+    
+    .sec-two-text{
+        font-size: 40px;
+    }
+    
+    .cards-div-sec-two{
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 15px;
+    }
+    .card-two img{
+        height: 110px;
+    }
+    
+    .card-text-two{
+        font-size: 20px;
+    }
+  }
+
+  /* section two style part ended */
